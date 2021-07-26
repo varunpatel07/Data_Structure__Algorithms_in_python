@@ -12,6 +12,7 @@ Complexity--> O(log N)
 def BinarySearchRecursive(arr,val,low,high):
     if(high<low):
         return -sys.maxsize
+        
     mid=low+(high-low)//2
     if(arr[mid]==val):
         return mid
@@ -36,4 +37,4 @@ def BinarySearchIterative(arr,val):
 
 arr=[1,2,3,4,5,6,7,8,8,22,44,55]
 print(BinarySearchRecursive(arr,55,0,len(arr)-1))
-print(BinarySearchIterative(arr,55))
+print(BinarySearchIterative(arr,1))

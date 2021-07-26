@@ -1,0 +1,1 @@
+in greedy approch we choose the most beneficial item first and then move to the next one
