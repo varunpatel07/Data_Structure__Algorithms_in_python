@@ -4,17 +4,12 @@ Input: [[1,3],[2,6],[8,10], [9,11] ,[10,12], [2,4] ,[15,18]]
 Output: [[1,6],[8,12],[15,18]] 
 
 """
-
-class test:
-    varu=[1,2,3]
-
-    def updt(self):
-        self.varu.copy
-        self.varu=10
-
-
-a=test()
-b=test()
-print(f"{a.varu}  {b.varu}")
-a.updt()
-print(f"{test.varu}  {test.varu}")
+def test(i=0,arr=[],arr1=[]):
+    print(f"before {i}----{locals()}")
+    if(i==3):
+        return
+    arr.append(i)
+    arr1=arr1+[i]
+    test(i+1)
+    print(f"after {i}----{locals()}")
+test()
